@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<title>Amrap app icon</title>
+<rect width="1024" height="1024" fill="#eef4ff"></rect>
+<path d="M757.7 359.9A300 300 0 1 1 409.4 250.1" fill="none" stroke="#e0245e" stroke-width="80" stroke-linecap="round"></path>
+<path d="M440.9 336.5L550.3 198.8L377.9 163.6Z" fill="#e0245e" stroke="#e0245e" stroke-width="16" stroke-linejoin="round"></path>
+<g fill="#1b2a6b"><rect x="280" y="476" width="54" height="112" rx="20"></rect><rect x="334" y="430" width="72" height="204" rx="22"></rect><rect x="406" y="506" width="212" height="52" rx="0"></rect><rect x="618" y="430" width="72" height="204" rx="22"></rect><rect x="690" y="476" width="54" height="112" rx="20"></rect></g>
+</svg>

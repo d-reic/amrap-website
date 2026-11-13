@@ -1,0 +1,28 @@
+/* Amrap design system v3 — components (from components/bundle.css, body rule removed). */
+.amrap-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-12); max-width: 420px; }
+
+.amrap-stat-card { display: flex; align-items: center; gap: var(--space-12); min-height: 72px; box-sizing: border-box; padding: var(--space-16); border-radius: var(--radius-card); background: var(--surface-card); border: var(--stroke-hairline) solid var(--card-stroke); }
+.amrap-stat-card__text { flex: 1; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
+.amrap-stat-card__title { font-size: 12px; line-height: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.02em; color: var(--label-secondary); }
+.amrap-stat-card__value { font-family: var(--font-display); font-size: 28px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--label); white-space: nowrap; }
+.amrap-stat-card__emoji { font-size: 28px; line-height: 1; }
+
+.amrap-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-8); min-height: 108px; padding: var(--space-8); border-radius: var(--radius-tile); color: var(--on-type); }
+.amrap-tile i { font-size: 28px; }
+.amrap-tile span { font-size: 17px; line-height: 22px; font-weight: 600; }
+.amrap-tile--lift { background: var(--type-lift); }
+.amrap-tile--wod { background: var(--type-wod); }
+.amrap-tile--skill { background: var(--type-skill); }
+.amrap-tile--distance { background: var(--type-distance); }
+
+.amrap-phase { --ground: var(--timer-work); --ink: var(--on-timer-work); --ring: var(--on-timer-work); --badge-ink: var(--timer-work); display: flex; flex-direction: column; align-items: center; gap: var(--space-16); padding: var(--space-24) var(--space-16); border-radius: var(--radius-tile); background: var(--ground); color: var(--ink); }
+.amrap-phase--countdown { --ground: var(--timer-countdown); --ink: var(--on-timer-countdown); --ring: var(--on-timer-countdown); --badge-ink: var(--timer-countdown); }
+.amrap-phase--rest { --ground: var(--timer-rest); --ink: var(--on-timer-rest); --ring: var(--timer-rest-ring); --badge-ink: var(--timer-rest); }
+.amrap-badge { display: inline-flex; justify-content: center; min-width: 96px; box-sizing: border-box; padding: var(--space-8) var(--space-16); border-radius: var(--radius-control); background: var(--ring); color: var(--badge-ink); font-family: var(--font-display); font-size: 20px; line-height: 1; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+
+.amrap-dial { position: relative; width: 300px; height: 300px; max-width: 100%; aspect-ratio: 1; }
+.amrap-dial svg { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.amrap-dial__track, .amrap-dial__ring { fill: none; stroke-width: var(--stroke-ring); }
+.amrap-dial__track { stroke: var(--ring, var(--label)); stroke-opacity: 0.25; }
+.amrap-dial__ring { stroke: var(--ring, var(--timer-idle-ring)); stroke-linecap: round; }
+.amrap-dial__time { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 74px; line-height: 1; font-weight: 800; font-variant-numeric: tabular-nums; }

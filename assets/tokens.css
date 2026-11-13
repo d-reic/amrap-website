@@ -1,0 +1,70 @@
+/* Amrap design system v3 — tokens (from the Amrap design system, tokens.json). */
+:root {
+  color-scheme: light dark;
+  --background: #eef4ff;
+  --surface-card: #ffffff;
+  --fill-secondary: rgba(27, 42, 107, 0.08);
+  --fill-quaternary: rgba(27, 42, 107, 0.14);
+  --card-stroke: rgba(27, 42, 107, 0.08);
+  --label: #1b2a6b;
+  --label-secondary: #4a5680;
+  --navy: #1b2a6b;
+  --sky-strong: #9cc2ff;
+  --primary: #1b2a6b;
+  --on-primary: #ffffff;
+  --accent: #e0245e;
+  --on-accent: #ffffff;
+  --danger: #c62828;
+  --type-lift: #f2711c;
+  --type-wod: #ad5fe0;
+  --type-skill: #22a06b;
+  --type-distance: #e8a317;
+  --type-undefined: #8a90a6;
+  --on-type: #000000;
+  --timer-countdown: var(--sky-strong);
+  --on-timer-countdown: var(--navy);
+  --timer-work: var(--accent);
+  --on-timer-work: var(--on-accent);
+  --timer-rest: var(--navy);
+  --on-timer-rest: #ffffff;
+  --timer-rest-ring: var(--sky-strong);
+  --timer-idle-ring: var(--primary);
+  --shadow-badge: 0 4px 10px rgba(0, 0, 0, 0.12);
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --radius-control: 12px;
+  --radius-card: 16px;
+  --radius-tile: 20px;
+  --radius-pill: 999px;
+  --stroke-ring: 12px;
+  --stroke-hairline: 1px;
+  --font-sf: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif-condensed, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a1230;
+    --surface-card: #141e44;
+    --fill-secondary: rgba(156, 194, 255, 0.16);
+    --fill-quaternary: rgba(156, 194, 255, 0.20);
+    --card-stroke: rgba(156, 194, 255, 0.12);
+    --label: #ffffff;
+    --label-secondary: #a3acc9;
+    --primary: #9cc2ff;
+    --on-primary: #0a1230;
+    --accent: #ff6b9a;
+    --on-accent: #0a1230;
+    --danger: #ff6b6b;
+    --type-lift: #ff8a3d;
+    --type-wod: #c084fc;
+    --type-skill: #3ccf8e;
+    --type-distance: #f5c04a;
+  }
+}
