@@ -2,7 +2,7 @@
 
 Static marketing site for the AMRAP iOS app at https://amrap-app.com.
 
-Hosted on Firebase Hosting (project `amrap-bd332`). Every push to `main` deploys automatically via `.github/workflows/firebase-hosting-merge.yml`; pull requests get a preview channel. amrap.danielreichenpfader.com redirects to amrap-app.com (set up in the Firebase console).
+Hosted on GitHub Pages from the root of `main`; every push deploys automatically. The custom domain is set in `CNAME`.
 
 Styles follow the Amrap design system v3:
 - `assets/tokens.css`: colour, type, spacing and radius tokens (light and dark)
