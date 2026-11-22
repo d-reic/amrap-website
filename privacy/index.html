@@ -32,7 +32,7 @@
   <main id="main">
     <section class="legal"><div class="wrap"><article class="doc">
       <h1>Privacy Policy</h1>
-      <p class="fine">Effective November 16, 2026</p>
+      <p class="fine">Effective November 22, 2026</p>
 
       <p>This policy explains what personal data the AMRAP iOS app (“AMRAP”, “the app”) and this website process, why, and what you can do about it. AMRAP is made by Daniel Reichenpfader in Switzerland (“we”, “us”), who is responsible for the processing described here. Questions: <a href="mailto:amrap@danielreichenpfader.com">amrap@danielreichenpfader.com</a>.</p>
 
@@ -40,6 +40,7 @@
       <ul>
         <li>Your training journal stays on your phone. It is only uploaded if you turn on Cloud Backup, which is off by default.</li>
         <li>Social is optional. If you sign in, we store your profile and only the results you choose to share, on servers in Zurich, Switzerland.</li>
+        <li>AI coach is optional. When you ask it something, your message and the journal entries needed to answer are sent to Anthropic’s Claude through our server. We don’t store the conversation, and Anthropic does not train on it.</li>
         <li>Apple handles payments. RevenueCat tells the app whether you have a subscription. We never see your card details.</li>
         <li>No ads, no analytics, no tracking across apps or websites. We don’t sell your data.</li>
         <li>You can delete your cloud backup or your Social account in the app at any time, and everything tied to it is deleted with it.</li>
@@ -71,45 +72,58 @@
       <p>Your timer history and settings are not backed up. The backup is linked to your Social account and stored with Supabase in Zurich, Switzerland. Access rules on our servers make it readable and changeable only by your account; it is never shown to other users or used for leaderboards, challenges or anything else. It is sent over encrypted connections but is not end-to-end encrypted, so, as the operator, we could technically access it; we only do so where needed to keep the service running or when you ask us to.</p>
       <p>Turning Cloud Backup off stops further uploads. To remove the copy, tap Delete Cloud Backup in Settings; deleting your Social account also deletes it. Restore from Backup only adds entries that are missing on your iPhone and never deletes anything on your device.</p>
 
-      <h2>5. Purchases</h2>
+      <h2>5. AI coach (optional)</h2>
+      <p>AI coach is an in-app assistant that answers questions about your training and can suggest entries for your journal. It is part of Premium, requires a Social account, and asks for your consent before first use. It uses Claude, an AI model by Anthropic, PBC (USA).</p>
+      <ul>
+        <li><strong>What is sent:</strong> the messages you write in the conversation, the coach’s replies so far, and the parts of your journal a question needs (for example your results for one exercise). The coach asks for specific journal data and the app sends only that; your whole journal is not uploaded.</li>
+        <li><strong>How it is sent:</strong> from the app to our server at Supabase, which passes it on to Anthropic’s API and returns the reply. The request is linked to your account only to enforce a daily limit.</li>
+        <li><strong>What is stored:</strong> the conversation is kept on your iPhone only. Our server does not store messages; it keeps, per account and day, the number of requests and the amount of text processed (tokens), to enforce the daily limit and monitor costs. These counts are deleted with your account.</li>
+        <li><strong>At Anthropic:</strong> Anthropic processes the request on our behalf to generate the reply and does not use it to train its models. Under its commercial terms, Anthropic may keep API inputs and outputs for a limited time for safety and abuse monitoring before deleting them. See <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a>.</li>
+        <li><strong>Changes to your journal</strong> suggested by AI coach are only saved after you confirm them, and only on your iPhone.</li>
+      </ul>
+      <p>AI replies can be wrong. Don’t share health information or anything else you don’t want processed this way; AI coach is not medical advice.</p>
+
+      <h2>6. Purchases</h2>
       <p>Subscriptions are sold and billed by Apple through the App Store. We use RevenueCat to check whether your subscription is active. RevenueCat receives a random app user ID, your purchase and subscription status, and basic device and app information (such as the iOS and app version and the App Store country). It does not receive your name, email address or payment details, and we don’t link it to your Social account. See <a href="https://www.revenuecat.com/privacy/">RevenueCat’s privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</p>
 
-      <h2>6. This website</h2>
+      <h2>7. This website</h2>
       <p>This website is hosted on GitHub Pages (GitHub, Inc., USA), which processes visitors’ IP addresses to deliver the pages and logs them for security. Pages load fonts from Google Fonts and icons from jsDelivr, which receive your IP address when your browser requests those files. The site sets no cookies and uses no analytics. If you email us, we use your message and address only to answer you.</p>
 
-      <h2>7. Why we process your data (legal bases)</h2>
+      <h2>8. Why we process your data (legal bases)</h2>
       <ul>
         <li>To provide the app and the Social features you sign up for (performance of a contract).</li>
         <li>To keep a backup of your journal while Cloud Backup is on, which you can withdraw at any time by turning it off and deleting the backup (your consent).</li>
+        <li>To answer your questions in AI coach, which you agree to before first use and can stop at any time by no longer using it (your consent).</li>
         <li>To publish the results you choose to share, which you can withdraw at any time by unsharing the result or deleting your account (your consent).</li>
         <li>To keep the service secure and working, for example through server logs (legitimate interest).</li>
         <li>To meet legal obligations, for example for bookkeeping (legal obligation).</li>
       </ul>
       <p>We process data in line with the Swiss Federal Act on Data Protection (FADP) and, where it applies, the EU General Data Protection Regulation (GDPR).</p>
 
-      <h2>8. Service providers and transfers</h2>
+      <h2>9. Service providers and transfers</h2>
       <ul>
-        <li><strong>Supabase</strong> (Supabase, Inc.): sign-in, database and file storage for Social and Cloud Backup, and the exercise library. Data is stored in Supabase’s Zurich, Switzerland region.</li>
+        <li><strong>Supabase</strong> (Supabase, Inc.): sign-in, database and file storage for Social and Cloud Backup, the exercise library, and the server that relays AI coach requests. Data is stored in Supabase’s Zurich, Switzerland region.</li>
+        <li><strong>Anthropic</strong> (Anthropic, PBC, USA): generates AI coach replies.</li>
         <li><strong>RevenueCat</strong> (RevenueCat, Inc., USA): subscription status.</li>
         <li><strong>Apple</strong>: App Store purchases and Sign in with Apple.</li>
         <li><strong>GitHub</strong> (GitHub Pages), <strong>Google</strong> (Google Fonts) and <strong>jsDelivr</strong>: this website.</li>
       </ul>
       <p>Some of these companies are based in the USA and may access data from there. Where data leaves Switzerland or the EEA, we rely on adequacy decisions (such as the Swiss-U.S. and EU-U.S. Data Privacy Frameworks) or the European Commission’s standard contractual clauses. We don’t share your data with anyone else unless the law requires it.</p>
 
-      <h2>9. How long we keep data</h2>
-      <p>Social data and your cloud backup are kept until you delete them or your account. When you delete your account in the app’s Social tab, we delete your sign-in data, profile, profile picture, cloud backup, shared results, follows, kudos, challenge memberships, and the challenges and boxes you created. Server logs are kept by our providers for a limited time for security and then deleted. On-device data stays until you delete it or the app.</p>
+      <h2>10. How long we keep data</h2>
+      <p>Social data and your cloud backup are kept until you delete them or your account. When you delete your account in the app’s Social tab, we delete your sign-in data, profile, profile picture, cloud backup, AI coach usage counts, shared results, follows, kudos, challenge memberships, and the challenges and boxes you created. Server logs are kept by our providers for a limited time for security and then deleted. On-device data stays until you delete it or the app.</p>
 
-      <h2>10. Your rights</h2>
+      <h2>11. Your rights</h2>
       <p>You can ask us for access to your data, a copy in a portable format, correction, deletion, or restriction of processing, and you can object to processing or withdraw consent at any time. Much of this you can do yourself in the app: edit your profile, unshare a result, leave your box, delete your cloud backup, or delete your account. For anything else, email <a href="mailto:amrap@danielreichenpfader.com">amrap@danielreichenpfader.com</a>. We will answer within 30 days.</p>
       <p>You can also complain to a data protection authority: in Switzerland, the <a href="https://www.edoeb.admin.ch/">Federal Data Protection and Information Commissioner (FDPIC)</a>; in the EU, the <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">authority in your country</a>.</p>
 
-      <h2>11. Security</h2>
+      <h2>12. Security</h2>
       <p>Data is sent over encrypted connections (HTTPS). On our servers, access rules ensure that you can only change your own data and only see what others have made visible to you. No system is perfectly secure, so please choose what you share with care.</p>
 
-      <h2>12. Children</h2>
+      <h2>13. Children</h2>
       <p>AMRAP is not directed at children under 13, and we don’t knowingly collect their data. If you believe a child has created an account, contact us and we will delete it.</p>
 
-      <h2>13. Changes</h2>
+      <h2>14. Changes</h2>
       <p>We will update this policy when the app or the law changes, and change the date at the top. If a change materially affects how we use your data, we will let you know in advance, for example in the app.</p>
     </article></div></section>
   </main>
