@@ -162,3 +162,18 @@ section { scroll-margin-top: 72px; }
 .notfound { min-height: 70vh; display: grid; place-items: center; text-align: center; padding: var(--space-48) 0; }
 .notfound .amrap-dial { margin: 0 auto var(--space-24); width: 220px; height: 220px; }
 .notfound .amrap-dial__time { font-size: 64px; }
+
+/* AI coach chat */
+.chat { width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: var(--space-8); }
+.chat__msg { max-width: 85%; padding: var(--space-12) var(--space-16); border-radius: 20px 20px 20px 6px; background: var(--background); border: var(--stroke-hairline) solid var(--card-stroke); font-size: 15px; line-height: 20px; }
+.chat__msg--me { align-self: flex-end; border-radius: 20px 20px 6px 20px; background: var(--primary); color: var(--on-primary); border-color: transparent; }
+.chat__card { padding: var(--space-4) var(--space-16) var(--space-16); border-radius: var(--radius-card); background: var(--background); border: var(--stroke-hairline) solid var(--card-stroke); }
+
+/* Guided warm-up */
+.warmup { width: 100%; max-width: 320px; text-align: center; }
+.warmup__meta { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.85; }
+.warmup__move { font-family: var(--font-display); font-weight: 800; font-size: 34px; line-height: 0.95; text-transform: uppercase; }
+.warmup .amrap-dial { width: 180px; height: 180px; }
+.warmup .amrap-dial__time { font-size: 48px; }
+.warmup__cue { font-size: 15px; line-height: 20px; opacity: 0.9; }
+.warmup__next { padding: var(--space-4) var(--space-12); border-radius: var(--radius-pill); background: color-mix(in srgb, currentColor 16%, transparent); font-size: 13px; font-weight: 600; }
